@@ -1,0 +1,10 @@
+<div class = "navi">
+  <h2><%= @task.title %></h2>
+  <%= link_to 'Edit this task', edit_task_path %>
+</div>
+
+<div class = "gray-background">
+  <p><%= @task.details %></p>
+</div>
+<p><input type="checkbox" <%= 'checked' if @task.completed %>>This task is completed</p>
+<p><%= link_to 'Back to the list', tasks_path %>
